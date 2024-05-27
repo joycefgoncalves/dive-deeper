@@ -1,0 +1,84 @@
+#task 1
+
+# Prompt the user to enter three numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+# Compare the numbers to find the largest one
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
+
+# Print the largest number
+print("The largest number is:", largest)
+
+
+#task 2
+
+# Prompt the user to enter three numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+# Find the largest number
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
+
+# Find the smallest number
+if num1 <= num2 and num1 <= num3:
+    smallest = num1
+elif num2 <= num1 and num2 <= num3:
+    smallest = num2
+else:
+    smallest = num3
+
+# Print the largest and smallest numbers
+print("The largest number is:", largest)
+print("The smallest number is:", smallest)
+
+
+#task 3
+
+# Prompt the user to enter three numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+# Find the largest number
+if num1 > num2 and num1 > num3:
+    largest = num1
+elif num2 > num1 and num2 > num3:
+    largest = num2
+else:
+    largest = num3
+
+# Find the smallest number
+if num1 < num2 and num1 < num3:
+    smallest = num1
+elif num2 < num1 and num2 < num3:
+    smallest = num2
+else:
+    smallest = num3
+
+# Check for equality among the numbers
+if num1 == num2 == num3:
+    print("All numbers are equal.")
+elif num1 == num2 or num1 == num3 or num2 == num3:
+    print("Two numbers are equal to each other.")
+    if num1 == num2:
+        print("The equal numbers are:", num1, "and", num2)
+    elif num1 == num3:
+        print("The equal numbers are:", num1, "and", num3)
+    else:
+        print("The equal numbers are:", num2, "and", num3)
+else:
+    print("The smallest number is:", smallest)
+    print("The largest number is:", largest)
